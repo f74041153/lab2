@@ -3,7 +3,12 @@ using namespace std;
 class bmi
 {
 	public:
-	   float bmi_calculate(int height,int mass);
+	   void height_set(int h);
+	   int height_get();
+       void mass_set(int m);
+       int mass_get();	   
+	   float bmi_calculate();
+	   string category(float BMI);
 	private:	
-	   float bmi_value;
+	   int height,mass;
 };
